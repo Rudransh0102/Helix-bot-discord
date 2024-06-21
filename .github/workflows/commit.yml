@@ -20,9 +20,6 @@ jobs:
           persist-credentials: true # Ensure credentials are persisted for further git commands
           fetch-depth: 0
 
-      - name: Pull latest changes
-        run: git pull origin master
-
       - name: Modify last update
         run: |
           d=$(date '+%Y-%m-%dT%H:%M:%SZ')
